@@ -1,20 +1,33 @@
 import java.util.List;
 
 /**
- * Represents a school that manages students, instructors,
+ * Represents a school that knows it's name and that manages students,
+ * instructors,
  * courses, and lecture halls.
  */
+
 public class School {
     private String name;
 
     /** List of all current instructors in school */
     private List<Instructor> instructors;
+
     /** List of all current students in school */
     private List<Student> students;
+
     /** List of all current Lecture Halls in school */
     private List<LectureHall> lectureHalls;
+
     /** List of all available courses available in school */
     private List<Course> courses;
+
+    public School(String name) {
+        this.name = name;
+    }
+
+    public void printName() {
+        System.out.println(this.name);
+    }
 
     /** This method prints every course available in School object */
     public void printCourseCatalog() {

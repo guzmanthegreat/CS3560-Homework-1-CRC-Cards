@@ -1,6 +1,9 @@
 import java.util.List;
 
-//*Represents a Student that has a name, ID number, enrolled courses, can add or remove classes, etc. */
+/**
+ * Represents a Student that has a name, ID number, enrolled courses, can add or
+ * remove classes, etc.
+ */
 public class Student {
     private String name;
     private int identificationNumber;
