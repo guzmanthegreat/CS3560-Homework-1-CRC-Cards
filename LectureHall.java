@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class LectureHall {
     private String location;
     private List<Course> coursesInLectureHall;
