@@ -5,17 +5,17 @@ import java.util.List;
  * remove classes, etc.
  */
 public class Student {
-    private String name;
-    private int identificationNumber;
+    private String studentName;
+    private int iDNumber;
 
     private List<Course> enrolledClasses;
     private List<Course> grades;
 
     // *This method adds a Course object to enrolledClasses List*/
-    public void addClass(Course course) {
+    public void addCourse(Course course) {
     }
 
     // *This method removes a Course object to enrolledClasses List*/
-    public void removeClass(Course course) {
+    public void removeCourse(Course course) {
     }
 }

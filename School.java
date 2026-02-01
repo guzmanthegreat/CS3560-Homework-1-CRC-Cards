@@ -7,7 +7,7 @@ import java.util.List;
  */
 
 public class School {
-    private String name;
+    private String schoolName;
 
     /** List of all current instructors in school */
     private List<Instructor> instructors;
@@ -22,23 +22,26 @@ public class School {
     private List<Course> courses;
 
     public School(String name) {
-        this.name = name;
+        this.schoolName = name;
     }
 
+    /** Prints name */
     public void printName() {
-        System.out.println(this.name);
+        System.out.println(this.schoolName);
     }
 
-    /** This method prints every course available in School object */
+    /**
+     * This method prints every Course object element's Information in courses List
+     */
     public void printCourseCatalog() {
     }
 
     /** This method adds Course object to courses List */
-    public void addClass(Course course) {
+    public void addCourse(Course course) {
     }
 
     /** This method removes Course object from courses List */
-    public void removeClass(Course course) {
+    public void removeCourse(Course course) {
     }
 
     /** This method adds LectureHall object to lectureHalls List */
