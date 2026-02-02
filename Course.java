@@ -12,6 +12,14 @@ public class Course {
     private Instructor instructor;
     private List<Student> students;
 
+    public Course(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public void printCourseName() {
+        System.out.print(courseName);
+    }
+
     /**
      * sets course x to be prerequisite for course y
      * 
@@ -22,17 +30,19 @@ public class Course {
     }
 
     /**
-     * prints out every element in students list
+     * prints list of the times of the class, the lecture hall, the instructor, and
+     * the list of students.
      */
     public void generateRoster() {
     }
 
     /**
-     * assigns objects lectureHall
+     * Assigns lectureHall objects to Course's lectureHall field
      * 
      * @param lectureHall
      */
     public void assignLectureHall(LectureHall lectureHall) {
+        this.lectureHall = lectureHall;
     }
 
     /**
@@ -44,11 +54,12 @@ public class Course {
     }
 
     /**
-     * adds instructor object to instructor
+     * adds instructor object to instructor field
      * 
      * @param instructor
      */
     public void assignProfessor(Instructor instructor) {
+        this.instructor = instructor;
     }
 
 }

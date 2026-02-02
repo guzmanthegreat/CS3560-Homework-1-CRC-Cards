@@ -9,8 +9,18 @@ public class LectureHall {
     private List<Course> coursesInLectureHall;
 
     /**
+     * assigns location
+     * 
+     * @param location
+     */
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    /**
      * This method prints a schedule of Courses that use the lecture hall.
      */
     public void generateSchedule() {
     }
+
 }

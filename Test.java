@@ -1,8 +1,14 @@
 public class Test {
     public static void main(String[] args) {
-        School AltaLomaHigh = new School("Alta Loma High School");
+        School altaLomaHigh = new School("Alta Loma High School");
 
-        jasper.printName();
+        Course chemistry = new Course("Chemistry");
+
+        altaLomaHigh.printName();
+
+        altaLomaHigh.addCourse(chemistry);
+
+        chemistry.printCourseName();
 
     }
 }
